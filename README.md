@@ -1,6 +1,6 @@
 # ArUCo-Markers-Pose-Estimation-Generation-Python
 
-Forked from [here.s](https://github.com/GSNCodes/ArUCo-Markers-Pose-Estimation-Generation-Python)
+Forked from [here.](https://github.com/GSNCodes/ArUCo-Markers-Pose-Estimation-Generation-Python)
 
 This repository contains all the code you need to generate an ArucoTag,
 and estimate the pose of ArucoTags in images. There is also code to obtain the calibration matrix for your, and an example file to compute a transform between the robot and ArUCo marker as used for the surgical thread tracking project.
