@@ -24,7 +24,6 @@ JAW_CLOSED_ANGLE = [-0.2]
 SAVE_DIR = "/home/davinci/aruco_camera_calibration/calibration_files"
 CALIB_FNAME = "davinci_psm1_to_zed_calibration"
 
-
 def get_tag_to_robot_tf(pointA: np.ndarray, pointB: np.ndarray,
                         correction_in_robot_frame: np.ndarray) -> RigidTransform:
     tag2robot_translation = pointA

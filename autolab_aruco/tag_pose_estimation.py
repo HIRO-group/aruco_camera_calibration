@@ -68,18 +68,26 @@ if __name__ == '__main__':
         sys.exit(0)
 
     aruco_dict_type = ARUCO_DICT[args["type"]]
-    calibration_matrix_path = args["K_Matrix"]
-    distortion_coefficients_path = args["D_Coeff"]
 
     # load the input image from disk, convert it to grayscale, and detect
     # ArUCo markers in the image
     image = cv2.imread(args["image_path"])
 
-    # currently using ZED parameters
+    # ZED parameters
+    # k = np.array(
+    #     [[1376.21533203125, 0.0, 1113.4146728515625], [0.0, 1376.21533203125, 612.0199584960938], [0.0, 0.0, 1.0]])
+    # d = np.array([0.0, 0.0, 0.0, 0.0, 0.0])
+
+    # realsense parameters
     k = np.array(
-        [[1376.21533203125, 0.0, 1113.4146728515625], [0.0, 1376.21533203125, 612.0199584960938], [0.0, 0.0, 1.0]])
+        [[384.793, 0., 324.277],
+        [0., 384.422, 241.649],
+        [0., 0., 1.]]
+    )
     d = np.array([0.0, 0.0, 0.0, 0.0, 0.0])
-    l = 0.07064375
+
+    # tag dimensions
+    l = 0.136
 
     # display the K and D matrices to confirm they are correct with the user
     print("K Matrix: ")
@@ -92,7 +100,8 @@ if __name__ == '__main__':
     output, rvec, tvec = pose_estimation(image, aruco_dict_type, k, d, l)
     pose = rvec_tvec_to_transform(rvec, tvec)
 
-    plt.imshow('Estimated Pose', output)
+    plt.title("Estimated pose")
+    plt.imshow(output[..., ::-1])
     plt.show()
     input("Do the drawn axes look correct?")
 
