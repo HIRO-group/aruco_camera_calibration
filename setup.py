@@ -9,8 +9,9 @@ setup(
     author_email='kaushiks@berkeley.edu',
     license='MIT',
     packages=['autolab_aruco'],
-    install_requires=['opencv-contrib-python',
+    install_requires=['opencv-contrib-python==4.6.0.66',
                       'numpy',
-                      'matplotlib'],
+                      'matplotlib',
+                      'autolab_core'],
     classifiers=[],
 )
