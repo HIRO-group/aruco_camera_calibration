@@ -73,12 +73,12 @@ if __name__ == '__main__':
     # ArUCo markers in the image
     image = cv2.imread(args["image_path"])
 
-    # ZED parameters
+    # Etch ZED parameters (example)
     # k = np.array(
     #     [[1376.21533203125, 0.0, 1113.4146728515625], [0.0, 1376.21533203125, 612.0199584960938], [0.0, 0.0, 1.0]])
     # d = np.array([0.0, 0.0, 0.0, 0.0, 0.0])
 
-    # realsense parameters
+    # BWW UR5 RealSense parameters
     k = np.array(
         [[384.793, 0., 324.277],
         [0., 384.422, 241.649],

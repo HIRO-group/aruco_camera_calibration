@@ -78,8 +78,8 @@ if __name__ == '__main__':
 
     ret, mtx, dist, rvecs, tvecs = calibrate(dirpath, square_size, visualize=visualize, width=width, height=height)
 
-    print(mtx)
-    print(dist)
+    print('k', mtx)
+    print('d', dist)
 
     np.save("calibration_matrix", mtx)
     np.save("distortion_coefficients", dist)

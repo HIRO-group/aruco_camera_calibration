@@ -2,6 +2,8 @@ from autolab_core import RigidTransform
 import numpy as np
 import cv2
 
+# touch the TCP of the robot to each of the corners of the AR tag and list the positions here
+
 # use the corresponding corner names from the AR tag
 # these are example values from a calibration run on the UR5
 A = np.array([-326, -576, -22]) / 1000
@@ -30,4 +32,4 @@ transform = RigidTransform(R, center, from_frame='tag', to_frame='robot')
 print("Calculated transform!")
 print(transform)
 
-transform.save("T_tag_to_robot.tf")
+transform.save("T_tag_robot.tf")
