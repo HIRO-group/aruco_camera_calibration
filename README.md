@@ -7,7 +7,7 @@ This repository contains all the code you need to generate an ArucoTag, estimate
 <img src = 'autolab_aruco/Images/pose_output_image.png' width=400 height=400>
 
 ## 0. Getting Started
-Run `git clone https://github.com/BerkeleyAutomation/aruco_camera_calibration`.
+Run `git clone https://github.com/BerkeleyAutomation/aruco_camera_calibration`. Then, `cd aruco_camera_calibration` and then run `pip install -e .` to install the dependencies.
 
 ## 1. ArUCo Marker Generation
 The file `generate_aruco_tags.py` contains the code for ArUCo Marker Generation.
