@@ -1,10 +1,12 @@
 LICENSE
 README.md
 setup.py
-autolab_aruco/example_compute_robot_cam_transform.py
+autolab_aruco/camera_to_robot.py
 autolab_aruco/find_camera_intrinsics.py
 autolab_aruco/generate_aruco_tags.py
-autolab_aruco/tag_pose_estimation.py
+autolab_aruco/pixel_to_robot_coord.py
+autolab_aruco/tag_to_camera.py
+autolab_aruco/tag_to_robot.py
 autolab_aruco/utils.py
 autolab_aruco.egg-info/PKG-INFO
 autolab_aruco.egg-info/SOURCES.txt

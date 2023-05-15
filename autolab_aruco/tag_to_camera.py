@@ -79,15 +79,25 @@ if __name__ == '__main__':
     # d = np.array([0.0, 0.0, 0.0, 0.0, 0.0])
 
     # BWW UR5 RealSense parameters
-    k = np.array(
-        [[384.793, 0., 324.277],
-        [0., 384.422, 241.649],
-        [0., 0., 1.]]
-    )
-    d = np.array([0.0, 0.0, 0.0, 0.0, 0.0])
+    #k = np.array(
+    #    [[384.793, 0., 324.277],
+    #    [0., 384.422, 241.649],
+    #    [0., 0., 1.]]
+    #)
+    #d = np.array([0.0, 0.0, 0.0, 0.0, 0.0])
 
     # tag dimensions
-    l = 0.136
+    #l = 0.136
+
+    # left
+    #k = np.array([[644.73371, 0, 315.87594], [0, 641.0659, 249.40313], [0, 0, 1]])
+    #d = np.array([0.014610, -0.106864, 0.004486, 0.011035, 0])
+    #l = 0.206375
+
+    # right
+    k = np.array([[643.17533, 0, 312.50209], [0, 639.57581, 248.27673], [0, 0, 1]])
+    d = np.array([0.026504, -0.065564, 0.001687, 0.004669, 0])
+    l = 0.206375
 
     # display the K and D matrices to confirm they are correct with the user
     print("K Matrix: ")
@@ -109,3 +119,4 @@ if __name__ == '__main__':
     # save the RigidTransform to disk
     pose.save('T_tag_cam.tf')
     print("Saved to disk!")
+

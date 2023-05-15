@@ -1,4 +1,4 @@
-Metadata-Version: 2.1
+Metadata-Version: 1.0
 Name: autolab-aruco
 Version: 0.1.0
 Summary: A example Python package
@@ -6,8 +6,5 @@ Home-page: https://github.com/BerkeleyAutomation/aruco_camera_calibration
 Author: Kaushik Shivakumar
 Author-email: kaushiks@berkeley.edu
 License: MIT
+Description: UNKNOWN
 Platform: UNKNOWN
-License-File: LICENSE
-
-UNKNOWN
-

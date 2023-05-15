@@ -1,3 +1,4 @@
-opencv-contrib-python
-numpy
+autolab_core
 matplotlib
+numpy
+opencv-contrib-python==4.6.0.66

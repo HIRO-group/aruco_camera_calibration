@@ -3,8 +3,8 @@ import numpy as np
 
 tag_to_robot = RigidTransform.load("T_tag_robot.tf")
 tag_to_cam = RigidTransform.load("T_tag_cam.tf")
-# print(tag_to_robot)
-# print(tag_to_cam)
+#print(tag_to_robot)
+#print(tag_to_cam)
 
 tag_to_cam.rotation = RigidTransform.y_axis_rotation(-1.5 * np.pi / 180)
 
