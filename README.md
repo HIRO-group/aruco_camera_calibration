@@ -1,3 +1,7 @@
+See the calibration guide [here](https://github.com/HIRO-group/aruco_camera_calibration/wiki/Calibration-Guide).
+
+---
+
 # ArUCo-Markers-Pose-Estimation-Generation-Python
 
 Forked from [here.](https://github.com/GSNCodes/ArUCo-Markers-Pose-Estimation-Generation-Python)
